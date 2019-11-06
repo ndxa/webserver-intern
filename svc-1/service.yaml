@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: web-1-svc
+  labels:
+    run: web-1
+spec:
+  type: NodePort
+  selector:
+    run: web-1
+  ports:
+    - port: 80
+

@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: web-3-svc
+  labels:
+    run: web-3
+spec:
+  type: NodePort
+  selector:
+    run: web-3
+  ports:
+    - port: 80
+

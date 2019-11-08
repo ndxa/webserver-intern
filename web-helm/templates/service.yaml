@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ .Chart.Name}}-svc
+  labels:
+    run: {{ .Chart.Name}}
+spec:
+  type: {{ .Values.service.type}}
+  selector:
+    run: {{ .Chart.Name}}
+  ports:
+    - port: 80
+

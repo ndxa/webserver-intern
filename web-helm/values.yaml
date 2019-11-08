@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image: ndxa/webserver:v5
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+
+service:
+  type: NodePort
+  port: 80
